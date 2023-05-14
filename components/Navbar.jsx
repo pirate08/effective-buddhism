@@ -29,7 +29,7 @@ const Navbar = () => {
       <nav className='h-20 bg-black text-white flex justify-between items-center px-4 sm:px-12 shadow-md'>
         <div className='flex cursor-pointer'>
           <div>
-            <Image src='/assets/logo.png' height={30} width={40} />
+            <Image src='/Assets/logo.png' height={30} width={40} />
           </div>
           <div className='flex items-center pl-4'>
             <h1 className='text-xl font-serif hidden sm:block'>
