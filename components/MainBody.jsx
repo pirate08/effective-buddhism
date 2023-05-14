@@ -4,30 +4,37 @@ import React, { useEffect } from 'react';
 import Option2 from '@/partials/Option2';
 import Sources from '@/partials/Sources';
 import 'animate.css';
-import WOW from 'wowjs';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import Link from 'next/link';
 import Image from 'next/image';
 
 const MainBody = () => {
   useEffect(() => {
-    new WOW.WOW({
-      live: false,
-    }).init();
-  }, []);
+    Aos.init({
+      once: true,
+      disable: 'phone',
+      duration: 600,
+      easing: 'ease-out-sine',
+    });
+  });
 
   return (
     <div className='scroll-smooth'>
       {/* First Image--- */}
       <div className='min-h-screen bg-buddha bg-fixed bg-no-repeat bg-cover bg-center flex justify-center items-center'>
         <div>
-          <h1 className='bg-black px-8 py-4 text-white font-bold text-2xl sm:text-4xl animate__animated animate__bounce'>
+          <h1
+            className='bg-black px-8 py-4 text-white font-bold text-2xl sm:text-4xl'
+            data-aos='fade-up'
+            data-aos-delay='300'>
             Effective Buddhism
           </h1>
         </div>
       </div>
       {/* First Part--- */}
       <div className='min-h-screen bg-white bg-no-repeat bg-cover bg-center bg-fixed pt-14 px-8 sm:px-14 mb-6'>
-        <div className='wow animate__animated animate__fadeInLeft'>
+        <div data-aos='fade-right' data-aos-delay='300'>
           <h1 className='mb-3 text-2xl text-yellow-500 font-bold'>Thesis:</h1>
           <p className='mb-6 text-gray-500'>
             Buddhism is an amazing philosophy full of wisdom with great truths,
@@ -45,7 +52,7 @@ const MainBody = () => {
             different story of how the Buddha should act.
           </p>
         </div>
-        <div className='wow animate__animated animate__fadeInLeft'>
+        <div data-aos='fade-right' data-aos-delay='300'>
           <p className='text-gray-400 mb-3'>
             The Bodhisattva Vows exist in many different forms; they are chanted
             as follows:
@@ -86,7 +93,7 @@ const MainBody = () => {
             <li className='mb-2'>To learn all teachings.</li>
             <li className='mb-5'>To attain perfect enlightenment.</li>
           </ul>
-          <div className='wow animate__animated animate__fadeInLeft'>
+          <div data-aos='fade-right' data-aos-delay='300'>
             {/* Paragraph--- */}
             <p className='mt-8 mb-5 text-gray-500'>
               If you go searching, there are many other ways these four vows are
@@ -142,7 +149,7 @@ const MainBody = () => {
             </p>
           </div>
           {/* 10 precepts--- */}
-          <div className='wow animate__animated animate__fadeInLeft'>
+          <div data-aos='fade-right' data-aos-delay='300'>
             <h6 className='text-gray-400 mb-4'>
               A few examples of parallel movements to the 10 precepts are:
             </h6>
@@ -167,7 +174,10 @@ const MainBody = () => {
       {/* Second Image--- */}
       <div className='min-h-screen bg-buddha2 bg-fixed bg-no-repeat bg-cover bg-center flex justify-center items-center'>
         <div>
-          <h1 className='bg-white px-8 py-4 text-black font-bold text-2xl sm:text-4xl wow animate__animated animate__bounce'>
+          <h1
+            className='bg-white px-8 py-4 text-black font-bold text-2xl sm:text-4xl'
+            data-aos='fade-down'
+            data-aos-delay='300'>
             Message from Buddha
           </h1>
         </div>
@@ -175,7 +185,7 @@ const MainBody = () => {
       {/* Last Part--- */}
       <div className='min-h-screen bg-white bg-no-repeat bg-cover bg-center bg-fixed pt-14 px-8 sm:px-14 mb-6'>
         {/* Last Paragraphs--- */}
-        <div className='wow animate__animated animate__fadeInLeft'>
+        <div data-aos='fade-right' data-aos-delay='300'>
           <h1 className='mb-3 text-2xl text-yellow-500 font-bold'>
             Reiterating The Message:
           </h1>
@@ -308,7 +318,10 @@ const MainBody = () => {
       {/* Last Image--- */}
       <div className='min-h-screen bg-buddha3 bg-fixed bg-no-repeat bg-cover bg-center flex justify-center items-center'>
         <div>
-          <h1 className='bg-white px-8 py-4 text-black font-bold text-2xl text-center sm:text-4xl wow animate__animated animate__bounce'>
+          <h1
+            className='bg-white px-8 py-4 text-black font-bold text-2xl text-center sm:text-4xl'
+            data-aos='fade-down'
+            data-aos-delay='300'>
             The Root of Suffering is Attachment.
           </h1>
         </div>
