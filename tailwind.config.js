@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'buddha' : 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTud33115g7-szaATwq5B1503_LlsVTNS_dCQ&usqp=CAU")',
+        'buddha2' : 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRazjXle6be0wZ0AWgC6MjP-D1mchDiuiV7gg&usqp=CAU")',
+        'buddha3' : 'url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZq3fWhU-qfhqLnPDw8FCjyvXHTEjdJfor3Q")',
       },
     },
   },
